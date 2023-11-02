@@ -1,0 +1,203 @@
+:root {
+    --navbar-width: 8vw;
+    --icon-size: 4vw;
+    --main-content-margin: var(--navbar-width);
+    --rectangle-border: 3px solid white;
+}
+
+/* General style */
+body {
+    margin: 0;
+    display: flex;
+    background-color: #B99BCB;
+    overflow-x: hidden;
+}
+
+/* Menu style */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--navbar-width);
+    height: 100vh;
+    background-color: rgba(12.92, 12, 13.46, 0.60);
+}
+
+nav .icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.icons img:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+/* Main content */
+.main {
+    height: 100vh;
+    margin-left: var(--main-content-margin);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.textArea {
+    width: 90%;
+    color: #FFF;
+    font: normal 400 20px/normal Kalam;
+    text-align: justify;
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 20px 10px;
+    border: var(--rectangle-border);
+}
+
+/* Projects viewport */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.folder {
+    position: relative;
+    height: 10vw;
+    width: 15vw;
+}
+
+.folder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    opacity: 0;
+}
+
+.folder img:first-child {
+    opacity: 1;
+}
+
+/* Contact viewport */
+#scrollPoint4 img {
+    width: 15vw;
+    margin-right: 100px;
+}
+
+#scrollPoint4 img:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1084px) {
+    .textArea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+
+    :root {
+        --main-content-margin: 0;
+    }
+
+    .rectangle:not(:first-child) {
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+
+@media (max-height: 400px) and (max-width: 855px) {
+    .textArea {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 360px) {
+    .textArea {
+        font-size: 8px;
+    }
+
+    .rectangle {
+        padding: 5px 5px;
+    }
+}
+
+@media (max-height: 400px) and (max-width: 855px) {
+    #scrollPoint2 .rectangle {
+        border: none;
+    }
+}
+
+@media (max-height: 360px) {
+    .textArea {
+        font-size: 8px;
+    }
+
+    .rectangle {
+        padding: 5px 5px;
+    }
+}
+
+@media (max-height: 330px) {
+    #scrollPoint2 .rectangle {
+        border: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .textArea {
+        font-size: 12px;
+    }
+
+    #scrollPoint4 .rectangle, #scrollPoint3 .rectangle{
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    #scrollPoint4 img {
+        margin : 5px;
+    }
+
+    .folder {
+        margin: 5px;
+    }
+
+}
+
+
+
+@media (max-width: 300px) {
+    #scrollPoint2 .rectangle {
+        border: none;
+    }
+}
