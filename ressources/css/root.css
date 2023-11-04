@@ -113,109 +113,7 @@ section {
 #scrollPoint4 img:last-child {
     margin-right: 0;
 }
-/*
-@media (max-width: 1084px) {
-    .textArea {
-        font-size: 16px;
-    }
-}
 
-@media (max-width: 768px) {
-    .hide-on-mobile {
-        display: none;
-    }
-
-    .projects {
-        flex-direction: column;
-    }
-
-
-    :root {
-        --main-content-margin: 0;
-    }
-
-    .rectangle:not(:first-child) {
-        width: fit-content;
-        height: fit-content;
-    }
-
-}
-
-@media (max-height: 400px) and (max-width: 855px) {
-    .textArea {
-        font-size: 10px;
-    }
-}
-
-@media (max-height: 360px) {
-    .textArea {
-        font-size: 8px;
-    }
-
-    .rectangle {
-        padding: 5px 5px;
-    }
-}
-
-@media (max-height: 400px) and (max-width: 855px) {
-    #scrollPoint2 .rectangle {
-        border: none;
-    }
-}
-
-@media (max-height: 360px) {
-    .textArea {
-        font-size: 8px;
-    }
-
-    .rectangle {
-        padding: 5px 5px;
-    }
-}
-
-@media (max-height: 450px) and (min-width: 777px) {
-    .hide-on-mobile {
-        display: none;
-    }
-}
-
-@media (max-height: 330px) {
-    #scrollPoint2 .rectangle {
-        border: none;
-    }
-
-    .textArea p {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 600px) {
-    .textArea {
-        font-size: 12px;
-    }
-
-    #scrollPoint4 .rectangle, #scrollPoint3 .rectangle{
-        flex-direction: column;
-        width: fit-content;
-    }
-
-    #scrollPoint4 img {
-        margin : 5px;
-    }
-
-    .folder {
-        margin: 5px;
-    }
-
-}
-
-
-
-@media (max-width: 300px) {
-    #scrollPoint2 .rectangle {
-        border: none;
-    }
-}*/
 /* General Mobile Styles */
 @media (max-width: 768px) {
     :root {
@@ -236,7 +134,7 @@ section {
     }
 
     .textArea {
-        font-size: 12px; /* Set a base size for mobile that will override larger sizes */
+        font-size: 12px;
     }
 
     #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
@@ -278,7 +176,7 @@ section {
 
 @media (max-height: 400px) {
     .textArea {
-        font-size: 10px; /* The larger of the two sizes set for this height */
+        font-size: 10px;
     }
 
     #scrollPoint2, #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
@@ -287,17 +185,17 @@ section {
 }
 
 @media (max-height: 360px) {
-    .textArea, .textArea p {
-        font-size: 8px; /* Combines the textArea and p tag font size adjustment */
+    .textArea p {
+        font-size: 8px;
     }
 
     .rectangle {
-        padding: 5px; /* Combining since this padding is the same */
+        padding: 5px;
     }
 }
 
 @media (max-height: 330px) {
     .textArea p {
-        font-size: 9px; /* This overrides the previously set 8px font size in max-height: 360px */
+        font-size: 9px;
     }
 }
