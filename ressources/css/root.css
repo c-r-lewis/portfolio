@@ -173,6 +173,10 @@ section {
     body {
         flex-direction: column;
     }
+
+    section {
+        height: fit-content;
+    }
 }
 
 /* Height Specific Adjustments */
