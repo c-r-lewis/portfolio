@@ -8,6 +8,8 @@
 .appear-on-mobile {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
@@ -125,16 +127,22 @@ section {
 
 .folder {
     position: relative;
-    height: 10vw;
+    height: 10vh;
     width: 15vw;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .folder img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 15vw;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     opacity: 0;
 }
 
@@ -234,11 +242,12 @@ section {
 }
 
 .menu-text {
+    font-size: 18px;
     color: white;
 }
 
 .tab {
-    padding: 4px 0;
+    padding: 10px 0;
 }
 
 .mobile-return {
@@ -247,6 +256,11 @@ section {
     transform: rotate(-180deg);
 }
 
+.appear-on-mobile p {
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+}
 
 
 
