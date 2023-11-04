@@ -178,6 +178,19 @@ section {
     section {
         height: fit-content;
     }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .folder {
+        width: 30vw;
+        margin: 30px;
+    }
+
+    .folder img {
+        width: 30vw;
+    }
 }
 
 /* Height Specific Adjustments */
