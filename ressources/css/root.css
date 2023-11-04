@@ -72,6 +72,11 @@ nav .icons {
     height: var(--icon-size);
 }
 
+.menu-icon{
+    width: 10px;
+    height: 10px;
+}
+
 .icons img:not(:last-child) {
     margin-bottom: 72px;
 }
@@ -194,6 +199,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-text {
