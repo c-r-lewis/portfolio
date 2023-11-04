@@ -7,6 +7,10 @@
 
 .appear-on-mobile {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    top: 10%;
 }
 
 /* General style */
@@ -145,7 +149,7 @@ section {
     }
 
     .appear-on-mobile {
-        display: block;
+        display: flex;
     }
 
     .projects {
@@ -198,10 +202,6 @@ section {
     }
     .appear-on-mobile {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 50%;
-        top: 10%;
     }
 }
 
