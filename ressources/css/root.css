@@ -23,6 +23,11 @@ nav {
     background-color: rgba(12.92, 12, 13.46, 0.60);
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 nav .icons {
     height: 100%;
     display: flex;
