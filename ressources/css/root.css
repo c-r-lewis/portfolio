@@ -113,7 +113,7 @@ section {
 #scrollPoint4 img:last-child {
     margin-right: 0;
 }
-
+/*
 @media (max-width: 1084px) {
     .textArea {
         font-size: 16px;
@@ -183,6 +183,10 @@ section {
     #scrollPoint2 .rectangle {
         border: none;
     }
+
+    .textArea p {
+        font-size: 9px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -210,5 +214,90 @@ section {
 @media (max-width: 300px) {
     #scrollPoint2 .rectangle {
         border: none;
+    }
+}*/
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    :root {
+        --main-content-margin: 0;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .rectangle:not(:first-child) {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .textArea {
+        font-size: 12px; /* Set a base size for mobile that will override larger sizes */
+    }
+
+    #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    #scrollPoint4 img, .folder {
+        margin: 5px;
+    }
+}
+
+/* Smaller Device Adjustments */
+@media (max-width: 600px) {
+    .folder {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 300px) {
+    #scrollPoint2 .rectangle {
+        border: none;
+    }
+}
+
+/* Tablet and Smaller Laptops */
+@media (max-width: 1084px) {
+    .textArea {
+        font-size: 16px;
+    }
+}
+
+/* Height Specific Adjustments */
+@media (max-height: 450px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media (max-height: 400px) {
+    .textArea {
+        font-size: 10px; /* The larger of the two sizes set for this height */
+    }
+
+    #scrollPoint2 .rectangle, #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
+        border: none; /* Combining the rules as they apply to the same elements */
+    }
+}
+
+@media (max-height: 360px) {
+    .textArea, .textArea p {
+        font-size: 8px; /* Combines the textArea and p tag font size adjustment */
+    }
+
+    .rectangle {
+        padding: 5px; /* Combining since this padding is the same */
+    }
+}
+
+@media (max-height: 330px) {
+    .textArea p {
+        font-size: 9px; /* This overrides the previously set 8px font size in max-height: 360px */
     }
 }
