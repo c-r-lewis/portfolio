@@ -193,10 +193,6 @@ section {
     .textArea {
         font-size: 10px;
     }
-
-    #scrollPoint2, #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
-        border: none;
-    }
 }
 
 @media (max-height: 360px) {
