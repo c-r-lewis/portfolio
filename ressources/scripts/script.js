@@ -30,12 +30,7 @@ document.querySelectorAll(".folder").forEach(folder => {
                 intervalId = null;
                 const projectUrl = folder.getAttribute('data-project-url');
                 if (projectUrl) {
-                    if (projectUrl.includes("www")){
-                        window.location.href = projectUrl;
-                    }
-                    else {
-                        window.location.href = `${window.location.origin}/${projectUrl}`;
-                    }
+                    window.location.href = `${window.location.origin}/${projectUrl}`;
                 }
             }
         }, 35);
