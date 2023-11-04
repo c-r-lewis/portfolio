@@ -8,9 +8,10 @@
 .appear-on-mobile {
     display: none;
     flex-direction: column;
-    position: absolute;
-    right: 50%;
-    top: 10%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: fixed;
 }
 
 /* General style */
@@ -87,7 +88,7 @@ section {
 .textArea {
     width: 90%;
     color: #FFF;
-    font: normal 400 20px/normal Kalam;
+    font: normal 400 18px/normal Kalam;
     text-align: justify;
 }
 
