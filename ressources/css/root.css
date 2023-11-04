@@ -13,6 +13,21 @@ body {
     overflow-x: hidden;
 }
 
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+
 /* Menu style */
 nav {
     position: fixed;
@@ -104,15 +119,15 @@ section {
     opacity: 1;
 }
 
+#scrollPoint4 .rectangle {
+    justify-content: space-around;
+}
+
 /* Contact viewport */
 #scrollPoint4 img {
     width: 10vw;
-    margin-right: 100px;
 }
 
-#scrollPoint4 img:last-child {
-    margin-right: 0;
-}
 
 /* General Mobile Styles */
 @media (max-width: 768px) {

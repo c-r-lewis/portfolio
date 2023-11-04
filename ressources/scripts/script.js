@@ -36,3 +36,33 @@ document.querySelectorAll(".folder").forEach(folder => {
         }, 35);
     });
 });
+
+
+document.getElementById('emailButton').addEventListener('click', function() {
+    const textToCopy = "charlotte.lewis@etu.umontpellier.fr";
+
+    navigator.clipboard.writeText(textToCopy).then(function() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'block';
+
+        setTimeout(function() {
+            popup.style.display = 'none';
+        }, 2000);
+    }).catch(function(error) {
+        console.error('Could not copy text: ', error);
+    });
+});
+
+document.getElementById('cvButton').addEventListener('click', function() {
+    const filePath = 'ressources/CV.pdf';
+    const link = document.createElement('a');
+    link.href = filePath;
+
+    link.download = 'CV_Lewis_Charlotte.pdf';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+});
