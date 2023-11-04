@@ -173,6 +173,12 @@ section {
     }
 }
 
+@media (max-height: 450px) and (min-width: 777px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
 @media (max-height: 330px) {
     #scrollPoint2 .rectangle {
         border: none;
