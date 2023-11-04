@@ -41,6 +41,9 @@ body {
     color: black;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
+    width: auto;
+    align-items: center;
     display: none;
     z-index: 1000;
 }
@@ -119,15 +122,16 @@ section {
 /* Projects viewport */
 .projects {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .folder {
     position: relative;
-    height: 10vh;
+    height: 18vh;
     width: 15vw;
     margin: 5px;
     display: flex;
@@ -141,8 +145,6 @@ section {
     left: 0;
     max-width: 100%;
     max-height: 100%;
-    width: auto;
-    height: auto;
     opacity: 0;
 }
 
@@ -169,6 +171,11 @@ section {
 
     .hide-on-mobile {
         display: none;
+    }
+
+    .popup {
+        position: absolute;
+        bottom: 90%;
     }
 
     .appear-on-mobile {
@@ -212,6 +219,10 @@ section {
 
     body {
         flex-direction: column;
+    }
+
+    .projects:first-child {
+        margin-left: 10vw;
     }
 }
 
