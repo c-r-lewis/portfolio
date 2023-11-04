@@ -281,8 +281,8 @@ section {
         font-size: 10px; /* The larger of the two sizes set for this height */
     }
 
-    #scrollPoint2 .rectangle, #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
-        border: none; /* Combining the rules as they apply to the same elements */
+    #scrollPoint2, #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
+        border: none;
     }
 }
 
