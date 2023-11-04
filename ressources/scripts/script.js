@@ -28,8 +28,10 @@ document.querySelectorAll(".folder").forEach(folder => {
             if (visibleIndex === images.length - 1) {
                 clearInterval(intervalId);
                 intervalId = null;
-                const baseUrl = window.location.protocol + "//" + window.location.host + "/";
-                window.location.href = baseUrl + "portfolio/project1.html";
+                const projectUrl = folder.getAttribute('data-project-url');
+                if (projectUrl) {
+                    window.location.href = `${window.location.origin}/${projectUrl}`;
+                }
             }
         }, 35);
     });
