@@ -143,6 +143,7 @@ section {
 
 #scrollPoint4 .rectangle {
     justify-content: space-around;
+    margin: 20px;
 }
 
 /* Contact viewport */
