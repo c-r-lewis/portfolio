@@ -151,48 +151,6 @@ section {
     .appear-on-mobile {
         display: flex;
     }
-
-    .projects {
-        flex-direction: column;
-    }
-
-    .rectangle:not(:first-child) {
-        width: fit-content;
-        height: fit-content;
-    }
-
-    .textArea {
-        font-size: 12px;
-    }
-
-    #scrollPoint4 .rectangle, #scrollPoint3 .rectangle {
-        flex-direction: column;
-        width: fit-content;
-    }
-
-    #scrollPoint4 img, .folder {
-        margin: 5px;
-    }
-}
-
-/* Smaller Device Adjustments */
-@media (max-width: 600px) {
-    .folder {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 300px) {
-    #scrollPoint2 .rectangle {
-        border: none;
-    }
-}
-
-/* Tablet and Smaller Laptops */
-@media (max-width: 1084px) {
-    .textArea {
-        font-size: 16px;
-    }
 }
 
 /* Height Specific Adjustments */
@@ -211,21 +169,6 @@ section {
     }
 }
 
-@media (max-height: 360px) {
-    .textArea p {
-        font-size: 8px;
-    }
-
-    .rectangle {
-        padding: 5px;
-    }
-}
-
-@media (max-height: 330px) {
-    .textArea p {
-        font-size: 9px;
-    }
-}
 
 .name {
     color: white;
