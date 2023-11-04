@@ -127,6 +127,7 @@ section {
     position: relative;
     height: 10vw;
     width: 15vw;
+    margin: 5px;
 }
 
 .folder img {
