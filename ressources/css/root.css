@@ -102,6 +102,11 @@ section {
     scroll-snap-align: start;
 }
 
+#scrollPoint1 {
+    flex-direction: column;
+    color: white;
+}
+
 .textArea {
     width: 90%;
     color: #FFF;
