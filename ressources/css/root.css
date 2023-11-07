@@ -225,7 +225,7 @@ section {
         display: flex;
         overflow: scroll;
         height: 100vh;
-        width: 100vw;
+        width: 80vw;
     }
 
     .rectangle {
