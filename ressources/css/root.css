@@ -1,3 +1,154 @@
+/* General style */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #B99BCB;
+    overflow-x: hidden;
+    width: 100dvw;
+}
+
+
+.hide-on-mobile {
+    display: flex;
+}
+
+
+
+.main {
+    height: 100dvh;
+    margin-left: 162px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.appear-on-mobile {
+    display: none;
+}
+
+section {
+    height: 100dvh;
+    display: flex;
+    min-width: calc(100dvw - 162px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+p {
+    color: white;
+}
+
+
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 90%;
+    min-width: 90%;
+    text-align: center;
+    border: 3px solid white;
+}
+
+
+/* Menu style */
+aside nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 162px;
+    height: 100dvh;
+    background-color: rgba(12.92, 12, 13.46, 0.60);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Name section */
+.name {
+    color: white;
+    font-size: 3em;
+    padding: 20px 200px;
+    word-wrap: break-word;
+}
+
+/* Biographie section */
+
+.textArea {
+    text-align: justify;
+    padding: 2rem 3rem;
+    font-size: 1.25em;
+    max-width: 100%;
+}
+
+/* Projects section */
+.projects {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.folder {
+    min-width:  30%;
+    min-height: 125px;
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.folder img {
+    width: 170px;
+    height: 125px;
+    position: absolute;
+    opacity: 0;
+}
+
+.folder img:first-child {
+    opacity: 1;
+}
+
+/* Contacts */
+#scrollPoint4 img {
+    width: 150px;
+    margin: 1rem 0;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 70%;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*
 
 .appear-on-mobile {
     display: none;
@@ -17,249 +168,10 @@
     position: fixed;
 }
 
-/* General style */
-body {
-    margin: 0;
-    display: flex;
-    background-color: #B99BCB;
-    overflow-x: hidden;
-}
-
-.popup {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background: white;
-    color: black;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    width: auto;
-    align-items: center;
-    display: none;
-    z-index: 1000;
-}
-
-
-/* Menu style */
-aside nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 8vw;
-    height: 100vh;
-    background-color: rgba(12.92, 12, 13.46, 0.60);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav .icons {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.icons img {
-    width: 4vw;
-    height: 4VW;
-}
 
 .menu-icon{
     width: 10px;
     height: 10px;
-}
-
-.icons img:not(:last-child) {
-    margin-bottom: 72px;
-}
-
-/* Main content */
-#main {
-    height: 100vh;
-    margin-left: 8vw;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scroll-snap-align: start;
-}
-
-#scrollPoint1 {
-    flex-direction: column;
-    color: white;
-}
-
-.textArea {
-    width: 90%;
-    color: #FFF;
-    font: normal 400 18px/normal Kalam;
-    text-align: justify;
-}
-
-.rectangle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    padding: 20px 10px;
-    border: 3px solid white;
-    margin: 5px;
-}
-
-/* Projects viewport */
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.folder {
-    position: relative;
-    height: 18vh;
-    width: 15vw;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.folder img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    max-height: 100%;
-    opacity: 0;
-}
-
-.folder img:first-child {
-    opacity: 1;
-}
-
-#scrollPoint4 .rectangle {
-    justify-content: space-around;
-    margin: 20px;
-}
-
-/* Contact viewport */
-#scrollPoint4 img {
-    width: 10vw;
-    margin: 5px;
-}
-
-
-/* General Mobile Styles */
-@media (max-width: 768px) {
-    :root {
-        --main-content-margin: 0;
-    }
-
-    .rectangle {
-        justify-content: space-around;
-        width: fit-content;
-        height: fit-content;
-    }
-
-
-    .hide-on-mobile {
-        display: none;
-    }
-
-    .popup {
-        position: absolute;
-        bottom: 90%;
-    }
-
-    .appear-on-mobile {
-        display: flex;
-    }
-
-    .textArea {
-        font-size: 14px;
-    }
-
-    body {
-        flex-direction: column;
-    }
-
-    section {
-        height: fit-content;
-    }
-
-    .projects {
-        flex-direction: column;
-    }
-
-    .folder {
-        width: 30vw;
-        margin: 20px;
-    }
-
-    .folder img {
-        width: 30vw;
-    }
-}
-
-/* Height Specific Adjustments */
-@media (max-height: 450px) {
-    .hide-on-mobile {
-        display: none;
-    }
-    .appear-on-mobile {
-        display: flex;
-        overflow: scroll;
-        height: 100vh;
-        width: 80vw;
-    }
-
-    .rectangle {
-        width: fit-content;
-    }
-
-    body {
-        flex-direction: column;
-        height: 100vh;
-    }
-
-}
-
-@media (max-height: 400px) {
-    .textArea {
-        font-size: 10px;
-    }
-
-    .appear-on-mobile p{
-        margin-bottom: 10px;
-    }
-
-    .folder {
-        margin: 9px;
-    }
-
-}
-
-
-.name {
-    color: white;
-    font-size: 25px;
-    padding: 0 50px;
-    word-wrap: break-word;
 }
 
 .menu-divider {
@@ -281,7 +193,6 @@ section {
     color: white;
 }
 
-
 .mobile-return {
     width: 50px;
     margin-left: 10px;
@@ -293,6 +204,6 @@ section {
     text-align: center;
 }
 
-
+*/
 
 
