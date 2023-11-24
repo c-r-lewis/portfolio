@@ -52,17 +52,3 @@ document.getElementById('emailButton').addEventListener('click', function() {
         console.error('Could not copy text: ', error);
     });
 });
-
-document.getElementById('cvButton').addEventListener('click', function() {
-    const filePath = 'ressources/CV.pdf';
-    const link = document.createElement('a');
-    link.href = filePath;
-
-    link.download = 'CV_Lewis_Charlotte.pdf';
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-});
