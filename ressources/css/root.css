@@ -2,6 +2,10 @@
 body {
     margin: 0;
     padding: 0;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #B99BCB;
     overflow-x: hidden;
     width: 100dvw;
@@ -23,6 +27,7 @@ body {
 
 .appear-on-mobile {
     display: none;
+    height: 100%;
 }
 
 section {
@@ -35,10 +40,14 @@ section {
     scroll-snap-align: start;
 }
 
-p {
+p, h1 {
     color: white;
+    text-align: center;
 }
 
+p {
+    text-align: justify;
+}
 
 
 .rectangle {
@@ -127,8 +136,8 @@ nav .icons {
 }
 
 /* Contacts */
-#scrollPoint4 img {
-    width: 150px;
+.contact-icon {
+    width: 140px;
     margin: 1rem 0;
 }
 
@@ -148,26 +157,39 @@ nav .icons {
     z-index: 1000;
 }
 
-/*
+/* Change style for mobile version */
+@media (max-width: 850px) or  (max-height:620px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .appear-on-mobile {
+        display: flex;
+    }
+
+    .rectangle, .projects {
+        flex-direction: column;
+    }
+
+    .textArea {
+        padding: 1rem;
+    }
+
+    #scrollPoint2 {
+        display: flex;
+    }
+
+    section {
+        width: 100dvw;
+    }
+}
+
 
 .appear-on-mobile {
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    position: fixed;
 }
-
-#contact {
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    position: fixed;
-}
-
 
 .menu-icon{
     width: 10px;
@@ -188,22 +210,21 @@ nav .icons {
     padding: 10px 0;
 }
 
-.menu-text {
-    font-size: 18px;
-    color: white;
-}
-
 .mobile-return {
-    width: 50px;
-    margin-left: 10px;
-    transform: rotate(-180deg);
+    max-width: 30px;
+    transform: rotate(180deg);
+    margin: 0 15px;
+
 }
 
-.appear-on-mobile p {
-    color: white;
-    text-align: center;
+
+.mobile-return-menu {
+    width: 100%;
+    height: fit-content;
 }
 
-*/
+.mobile-view p {
+    font-size: 0.8em;
+}
 
 
