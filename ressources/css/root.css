@@ -17,7 +17,6 @@ body {
 }
 
 
-
 .main {
     height: 100dvh;
     margin-left: 162px;
@@ -25,10 +24,6 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-.appear-on-mobile {
-    display: none;
-    height: 100%;
-}
 
 section {
     height: 100dvh;
@@ -158,38 +153,14 @@ nav .icons {
 }
 
 /* Change style for mobile version */
-@media (max-width: 850px) or  (max-height:620px) {
-    .hide-on-mobile {
-        display: none;
-    }
-
-    .appear-on-mobile {
-        display: flex;
-    }
-
-    .rectangle, .projects {
-        flex-direction: column;
-    }
-
-    .textArea {
-        padding: 1rem;
-    }
-
-    #scrollPoint2 {
-        display: flex;
-    }
-
-    section {
-        width: 100dvw;
-    }
-}
-
 
 .appear-on-mobile {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .menu-icon{
     width: 10px;
@@ -213,7 +184,10 @@ nav .icons {
 .mobile-return {
     max-width: 30px;
     transform: rotate(180deg);
-    margin: 0 15px;
+    margin: 15px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
 
 }
 
@@ -225,6 +199,38 @@ nav .icons {
 
 .mobile-view p {
     font-size: 0.8em;
+}
+
+
+
+@media (max-width: 850px) or  (max-height:620px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .appear-on-mobile {
+        display: flex;
+    }
+
+    .rectangle, .projects {
+        flex-direction: column;
+    }
+
+    .textArea {
+        padding: 1rem;
+        font-size: 1.1em;
+        max-height: 670px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    #scrollPoint2 {
+        display: flex;
+    }
+
+    section {
+        width: 100dvw;
+    }
 }
 
 
