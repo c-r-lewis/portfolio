@@ -38,7 +38,7 @@ document.querySelectorAll(".folder").forEach(folder => {
                 intervalId = null;
                 const projectUrl = folder.getAttribute('data-project-url');
                 if (projectUrl) {
-                    window.location.href = `projectUrl`;
+                    window.location.href = projectUrl;
                 }
             }
         }, 35);
