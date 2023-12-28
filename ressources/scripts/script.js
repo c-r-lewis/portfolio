@@ -1,7 +1,7 @@
 document.querySelectorAll(".folder").forEach(folder => {
     let intervalId = null;
 
-    folder.addEventListener("click", function() {
+    folder.addEventListener("click", function () {
         if (intervalId) {
             clearInterval(intervalId);
             intervalId = null;
@@ -11,11 +11,13 @@ document.querySelectorAll(".folder").forEach(folder => {
         const images = folder.querySelectorAll("img");
         let visibleIndex = -1;
 
-        images.forEach((img, index) => {
-            if (getComputedStyle(img).opacity === "1") {
-                visibleIndex = index;
+        // Find the first visible image (excluding the title)
+        for (let i = 0; i < images.length; i++) {
+            if (images[i].className !== "title" && getComputedStyle(images[i]).opacity === "1") {
+                visibleIndex = i;
+                break;
             }
-        });
+        }
 
         intervalId = setInterval(() => {
             if (visibleIndex !== -1) {
@@ -23,7 +25,13 @@ document.querySelectorAll(".folder").forEach(folder => {
             }
 
             visibleIndex = (visibleIndex + 1) % images.length;
-            images[visibleIndex].style.opacity = "1";
+
+            // Make sure the title is always visible
+            if (visibleIndex === 0) {
+                images[visibleIndex].style.opacity = "1";
+            } else {
+                images[visibleIndex].style.opacity = "1";
+            }
 
             if (visibleIndex === images.length - 1) {
                 clearInterval(intervalId);
@@ -36,6 +44,8 @@ document.querySelectorAll(".folder").forEach(folder => {
         }, 35);
     });
 });
+
+
 
 
 document.getElementById('emailButton').addEventListener('click', function() {

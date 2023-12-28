@@ -121,6 +121,10 @@ nav .icons {
     align-items: center;
 }
 
+.title {
+    opacity: 1;
+}
+
 .folder {
     min-width:  30%;
     min-height: 125px;
