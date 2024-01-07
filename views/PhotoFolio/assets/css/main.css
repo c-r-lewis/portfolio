@@ -52,6 +52,10 @@ h6 {
   text-align: justify;
 }
 
+.progress-bar {
+  background-color: #1E90FF;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -62,27 +66,6 @@ h6 {
 
 .grey-text {
   color: var(--color-grey);
-}
-
-
-/*--------------------------------------------------------------
-# Scroll top button
---------------------------------------------------------------*/
-.scroll-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  background: rgba(39, 167, 118, 0.8);
-  color: #fff;
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -126,9 +109,7 @@ h6 {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 700;
-  font-size: 24px;
+h4 {
   color: var(--color-primary);
 }
 
@@ -439,10 +420,10 @@ h2 {
 
 
 .btn {
-  font-family: var(--font-primary) !important;
   text-transform: uppercase;
   color: #fff;
-  background: var(--color-primary);
+  background: black;
+  border-color: white;
   font-size: 0.9rem;
 }
 
@@ -456,7 +437,7 @@ h2 {
   }
 
   .navbar-nav {
-    padding: 20px 0 0 0;
+    margin-top: 20px;
   }
 
   .navbar-collapse {
