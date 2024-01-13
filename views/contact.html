@@ -17,10 +17,10 @@
 
     <!-- CSS Files -->
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="../assets/bootstrap/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Main CSS File -->
     <link href="../assets/css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,57 +37,60 @@
                     </button>
                     <div class="collapse navbar-collapse container-fluid" id="navbarNav">
                         <ul class="navbar-nav container-fluid justify-content-between">
-                            <li><a class="active load-page" data-html-target="./views/home.php">Home</a></li>
-                            <li><a data-html-target="./views/aboutMe.php" class="load-page">A propos de moi</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="aboutMe.html">A propos de moi</a></li>
                             <li class="dropdown">
-                                <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="grey-text" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>Gallerie de projets</span>&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
                                 </a>
-                                <ul class="dropdown-menu mt-lg-3 py-0 container-fluid border-0">
-                                    <li class="ps-2"><a>Projets personnels</a></li>
-                                    <li class="ps-2"><a class="load-page" data-html-target="./views/SAE_presentation.php">SAE</a>
+                                <ul class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0">
+                                    <li><a href="gallery.html">Projets personnels</a></li>
+                                    <li><a href="SAE_info.html">SAE</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="home-page" data-html-target="./contact.php">Contact</a></li>
+                            <li><a class="active" href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-</header>
-<!-- End Header -->
+</header><!-- End Header -->
 
 
-<main>
-    <section class="my-5 d-flex flex-column justify-content-center align-items-center">
-        <div class="mt-5 container">
-            <div class="p-5 row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mb-3">Les SAE, qu'est-ce que c'est ?</h2>
-                    <p class="grey-text my-5 pt-2 text-justify">
-                        Les Situations d'Apprentissage et d'Évaluation (SAE) sont des exercices
-                        pratiques inspirés de situations professionnelles. Intégrées dans des projets,
-                        elles nécessitent une gestion efficace du temps. Les SAÉ visent le
-                        développement des compétences professionnelles, l'auto-évaluation des
-                        étudiants, et renforcent le travail autonome et en équipe. Elles offrent une
-                        approche concrète et complète de l'apprentissage, préparant les étudiants aux
-                        défis du monde professionnel.
-                    </p>
-                    <a class="btn" href="SAE1.html">
-                        SAE de premier semestre
-                    </a>
+<main class="d-flex align-items-center" style="height: 100dvh">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h2 class="mb-3">Contact</h2>
                 </div>
             </div>
         </div>
-    </section>
-</main>
-<!-- End #main -->
+        <div class="row d-flex justify-content-center mt-5 mb-3 position-relative">
+            <div id="popup" class="popup position-absolute bottom-100">Email Copié!</div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="contact-circle me-3 col-3" id="emailBtn">
+                <i class="bi bi-envelope" style="font-size: 2rem"></i>
+            </div>
+            <a class="contact-circle me-3 col-3" target="_blank" href="https://github.com/c-r-lewis">
+                <i class="bi-github" style="font-size: 2rem"></i>
+            </a>
+            <a class="contact-circle me-3 col-3" target="_blank" href="https://www.linkedin.com/in/charlotte-lewis-425262264">
+                <i class="bi-linkedin" style="font-size: 2rem"></i>
+            </a>
+            <a class="contact-circle me-3 col-3" download="CV-Charlotte-Lewis.pdf" href="../assets/CV.pdf">
+                <i class="bi-file-pdf" style="font-size: 2rem"></i>
+            </a>
+        </div>
+    </div>
+</main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer class="p-3">
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center fixed-bottom pb-3">
         <!-- Go to Top arrow button -->
         <a href="#">
             <i class="bi bi-arrow-up"></i>
@@ -98,6 +101,7 @@
 
 <!-- JS Files -->
 <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../assets/popup.js"></script>
 
 
 </body>

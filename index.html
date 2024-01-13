@@ -40,16 +40,16 @@
                             <li><a class="active" href="index.html">Home</a></li>
                             <li><a href="views/aboutMe.html">A propos de moi</a></li>
                             <li class="dropdown">
-                                <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="grey-text" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>Gallerie de projets</span>&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0">
-                                    <li><a class="load-page" data-html-target="projects.php">Projets personnels</a></li>
+                                    <li><a href="views/gallery.html">Projets personnels</a></li>
                                     <li><a href="views/SAE_info.html">SAE</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="home-page" data-html-target="./contact.php">Contact</a></li>
+                            <li><a href="views/contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,15 +79,36 @@
         <div class="container-fluid mx-2">
             <div class="row gy-4 gx-3 justify-content-center">
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card h-100 bg-transparent">
-                        <img src="assets/img/gallery/ndi2022.png" class="img-fluid card-img" alt="">
-                    </div>
+                    <a href="https://c-r-lewis.github.io/nuitDeLinfo/index.html">
+                        <div class="card h-100 bg-transparent">
+                            <img src="assets/img/gallery/ndi2022.png" class="img-fluid card-img" alt="">
+                            <div class="card-overlay">
+                                <p class="text-white">Nuit de l'Info 2022</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card h-100 bg-transparent">
-                        <img src="assets/img/gallery/portfolio.png" class="img-fluid card-img" alt="">
-                    </div>
+                    <a href="https://c-r-lewis.github.io">
+                        <div class="card h-100 bg-transparent">
+                            <img src="assets/img/gallery/portfolio.png" class="img-fluid card-img" alt="">
+                            <div class="card-overlay">
+                                <p class="text-white">Portfolio 2023</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="views/projets/siteVitrine.html">
+                        <div class="card h-100 bg-transparent">
+                            <img src="assets/img/gallery/siteVitrine.png" class="img-fluid card-img" alt="">
+                            <div class="card-overlay">
+                                <p class="text-white">Projet PHP 2023</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section><!-- End Gallery Section -->
