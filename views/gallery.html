@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
           rel="stylesheet">
 
-    <!-- CSS Files -->
+    <!-- Vendor CSS Files -->
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/bootstrap/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -25,6 +25,7 @@
 
 <body>
 
+<!-- ======= Header ======= -->
 <!-- ======= Header ======= -->
 <header class="header d-flex align-items-center fixed-top py-2">
     <div class="container-fluid align-items-center">
@@ -38,14 +39,14 @@
                     <div class="collapse navbar-collapse container-fluid" id="navbarNav">
                         <ul class="navbar-nav container-fluid justify-content-between">
                             <li><a href="../index.html">Home</a></li>
-                            <li><a href="aboutMe.html">A propos de moi</a></li>
+                            <li><a class="active" href="aboutMe.html">A propos de moi</a></li>
                             <li class="dropdown">
                                 <a class="grey-text" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="active">Gallerie de projets</span>&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
+                                    <span>Gallerie de projets</span>&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0">
-                                    <li><a href="gallery.html">Projets personnels</a></li>
-                                    <li><a href="#">SAE</a>
+                                    <li><a class="active" href="#">Projets personnels</a></li>
+                                    <li><a href="SAE_info.html">SAE</a>
                                     </li>
                                 </ul>
                             </li>
@@ -59,37 +60,43 @@
 </header><!-- End Header -->
 
 
-<main>
-    <section class="my-5 d-flex flex-column justify-content-center align-items-center">
-        <div class="mt-5 container">
-            <div class="p-5 row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mb-3">Les SAE, qu'est-ce que c'est ?</h2>
-                    <p class="grey-text my-5 pt-2 text-justify">
-                        Les Situations d'Apprentissage et d'Évaluation (SAE) sont des exercices
-                        pratiques inspirés de situations professionnelles. Intégrées dans des projets,
-                        elles nécessitent une gestion efficace du temps. Les SAÉ visent le
-                        développement des compétences professionnelles, l'auto-évaluation des
-                        étudiants, et renforcent le travail autonome et en équipe. Elles offrent une
-                        approche concrète et complète de l'apprentissage, préparant les étudiants aux
-                        défis du monde professionnel.
-                    </p>
-                    <div class="d-flex flex-column align-items-center">
-                        <a class="btn mb-4" href="projets/siteVitrine.html">
-                            Site vitrine PHP
-                        </a>
-                        <a class="btn" href="projets/SAE1.html">
-                            SAE de premier semestre
-                        </a>
+<main class="position-relative" style="margin-top: 70px; min-height: 80dvh">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 text-center my-5">
+            <h2>Gallerie de projets personnels</h2>
+        </div>
+    </div>
 
-                    </div>
+    <!-- ======= Gallery Section ======= -->
+    <section class="position-absolute top-50">
+        <div class="container-fluid mx-2">
+            <div class="row gy-4 gx-3 justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="https://c-r-lewis.github.io/nuitDeLinfo/index.html" target="_blank">
+                        <div class="card h-100 bg-transparent">
+                            <img src="../assets/img/gallery/ndi2022.png" class="img-fluid card-img" alt="">
+                            <div class="card-overlay">
+                                <p class="text-white">Nuit de l'Info 2022</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="https://c-r-lewis.github.io" target="_blank">
+                        <div class="card h-100 bg-transparent">
+                            <img src="../assets/img/gallery/portfolio.png" class="img-fluid card-img" alt="">
+                            <div class="card-overlay">
+                                <p class="text-white">Portfolio 2023</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-</main>
-<!-- End #main -->
+    </section><!-- End Gallery Section -->
 
+</main>
+<!-- End main -->
 <!-- ======= Footer ======= -->
 <footer class="p-3">
     <div class="container d-flex justify-content-center">
@@ -99,6 +106,7 @@
         </a>
     </div>
 </footer>
+
 
 
 <!-- JS Files -->
