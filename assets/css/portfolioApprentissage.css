@@ -1,0 +1,15 @@
+.card {
+    background-color: #333366;
+    color: white;
+    z-index: 9999;
+}
+
+.card h6 {
+    font-weight: bold;
+}
+
+.card a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
