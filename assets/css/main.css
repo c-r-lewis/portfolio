@@ -292,3 +292,35 @@ header {
     opacity: 0;
   }
 }
+
+.has-label:hover::after {
+  opacity: 1;
+}
+
+/* Style for the label */
+.has-label::after { 
+  position: absolute; 
+  background-color: #000; 
+  color: #fff; 
+  padding: 5px 10px;
+  border-radius: 5px; 
+  bottom: 50%;
+  opacity: 0;
+  transition: opacity 0.3s; 
+}
+
+#email::after {
+  content: "E-mail";
+}
+
+#linkedin::after {
+  content: "LinkedIn";
+}
+
+#github::after {
+  content: "Github";
+}
+
+#CV::after {
+  content: "CV";
+}
