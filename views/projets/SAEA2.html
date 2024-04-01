@@ -75,7 +75,7 @@
                       class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0"
                     >
                       <li><a href="../gallery.html">Projets personnels</a></li>
-                      <li><a class="active" href="../SAE_info.html">SAE</a></li>
+                      <li><a class="active" href="../SAE_info.html">SAE et TP</a></li>
                     </ul>
                   </li>
                   <li><a href="../contact.html">Contact</a></li>
@@ -99,26 +99,22 @@
       <div class="row justify-content-center">
         <div class="col-7 col-md-9 text-center">
           <h2 class="mb-3 front">
-            Etude de statistiques - De fichiers excel vers une base de données
+            Réseau et sécurité - Une application de gestion d'enchères
           </h2>
         </div>
       </div>
       <!-- =========== Intro =========== -->
       <div class="row justify-content-center mt-3">
         <div class="col-10 text-justify">
-          J'ai créé une base de données à partir de fichiers Excel contenant des
-          données sur les étudiants. Mon objectif principal était de simplifier
-          l'analyse des tendances des notes des étudiants et de déterminer si la
-          moyenne générale des étudiants était en hausse ou non. Pour ce faire,
-          j'ai d'abord trié les données erronées et incohérentes, assurant ainsi
-          la fiabilité de ma base de données. En éliminant les données
-          incorrectes, j'ai pu créer un ensemble de données propre et structuré,
-          prêt à être analysé. En utilisant des techniques d'analyse de données,
-          j'ai exploré les tendances des notes des étudiants sur plusieurs
-          années. Cette analyse m'a permis d'identifier d'éventuelles évolutions
-          dans les performances des étudiants au fil du temps. Le but de ce
-          projet était de créer une plateforme efficace pour mieux comprendre
-          les performances des étudiants et orienter les politiques éducatives.
+          Ce projet consistait à créer et déployer une application d'enchères
+          sécurisée à plis fermés, en utilisant une approche Agile et la
+          méthodologie SCRUM en groupe de 4 à 5 étudiants. L'objectif était de
+          répondre aux besoins d'un client spécifique en garantissant la
+          sécurité, la confidentialité et l'intégrité du processus d'enchères.
+          L'application inclut l'implémentation du principe de l'enchère de
+          Vickrey, des mesures de sécurité robustes, une authentification
+          utilisateur et un chiffrement des données sensibles. J'ai aussi
+          développé une interface utilisateur.
         </div>
       </div>
       <!-- End intro -->
@@ -143,7 +139,10 @@
                 onclick="toggleCollapse('collapse1')"
               >
                 <div class="col-11">
-                  <h6>CE - 4.03 : S'appuyer sur des bases mathématiques</h6>
+                  <h6>
+                    AC - A2 2.03 : Comprendre les enjeux et moyens de
+                    sécurisation des données et du code
+                  </h6>
                 </div>
                 <div class="col-1">
                   <i class="bi bi-chevron-down float-end"></i>
@@ -151,14 +150,19 @@
               </div>
               <div class="collapse" id="collapse1">
                 <p class="text-justify">
-                  J'ai analysé des données liées aux admissions, à l'absentéisme
-                  et aux performances des élèves em m'appuyant sur des
-                  statistiques reccueillies.
+                  J'ai examiné les différentes approches qu'une personne
+                  pourrait utiliser pour compromettre la sécurité de
+                  l'application, telles que le déni de service, l'écoute du
+                  réseau et les attaques de type homme du milieu. En réponse à
+                  ces menaces, j'ai intégré des techniques de sécurité telles
+                  que le chiffrement et l'utilisation de certificats
+                  d'authentification pour renforcer la sécurité de mon code.
+                  J'ai également eu l'opportunité d'analyser divers protocoles
+                  de sécurité et de sélectionner celui qui convenait le mieux à
+                  la situation. En outre, j'ai développé ma propre bibliothèque
+                  permettant de chiffrer les données, ajoutant ainsi une couche
+                  supplémentaire de protection à mon code.
                 </p>
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1YlMGhQwKjF4fV42-XAF4KDglPQlzqnDM4gaDk5aVdeU/edit?usp=sharing"
-                  >Quelques statistiques reccueillies</a
-                >
               </div>
             </div>
             <!-- End first card -->
@@ -174,7 +178,10 @@
                 onclick="toggleCollapse('collapse3')"
               >
                 <div class="col-11">
-                  <h6>AC - A1 4.02 : Visualiser des données</h6>
+                  <h6>
+                    CE 4.01 - Respecter les réglementations sur le respect de la
+                    vie privée et la protection des données personnelles
+                  </h6>
                 </div>
                 <div class="col-1">
                   <i class="bi bi-chevron-down float-end"></i>
@@ -182,16 +189,173 @@
               </div>
               <div class="collapse" id="collapse3">
                 <p class="text-justify">
-                  J'ai utilisé des outils tels que DBeaver, dotés d'une
-                  interface graphique facilitant la visualisation des données au
-                  sein de la base de données, ainsi que la création de
-                  graphiques à partir des données analysées.
+                  J'ai intégré le respect du RGPD dans la conception de mon
+                  application en offrant aux utilisateurs un accès facile aux
+                  conditions générales d'utilisation, ce qui leur permet de
+                  comprendre leurs droits concernant leurs données et leur
+                  utilisation. J'ai également étudié les mesures nécessaires
+                  pour faciliter la résolution des litiges éventuels des
+                  utilisateurs.
                 </p>
               </div>
             </div>
             <!-- End Second card -->
           </div>
           <!-- End second row -->
+          <!-- ===== Start third row ====== -->
+          <div class="row my-2">
+            <!-- ====== Fifth card ===== -->
+            <div class="card p-3">
+              <div
+                class="row"
+                id="heading5"
+                onclick="toggleCollapse('collapse5')"
+              >
+                <div class="col-11">
+                  <h6>
+                    AC - A2 5.02 : Formaliser les besoins du client et de
+                    l’utilisateur
+                  </h6>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-chevron-down float-end"></i>
+                </div>
+              </div>
+              <div class="collapse" id="collapse5">
+                <p class="text-justify">
+                  J'ai entrepris une démarche méthodique visant à identifier,
+                  clarifier et documenter les exigences fonctionnelles et non
+                  fonctionnelles du système. Cela impliquait d'interagir
+                  directement avec les parties prenantes, notamment le client et
+                  les utilisateurs finaux, afin de recueillir des informations
+                  précieuses sur leurs besoins, leurs attentes et leurs
+                  contraintes.
+                </p>
+                <p class="text-justify">
+                  J'ai utilisé différentes techniques pour formaliser ces
+                  besoins, telles que les entretiens, les questionnaires, les
+                  ateliers de travail et l'analyse de la documentation
+                  existante. Ces échanges m'ont permis de comprendre en
+                  profondeur les objectifs du projet, les fonctionnalités
+                  attendues et les contraintes à prendre en compte. Une fois les
+                  besoins identifiés, j'ai veillé à les structurer de manière
+                  claire et cohérente, en les traduisant sous forme de
+                  spécifications fonctionnelles et de cas d'utilisation.
+                </p>
+                <p class="text-justify">
+                  Cette formalisation précise des besoins a servi de référence
+                  tout au long du cycle de développement, permettant à l'équipe
+                  de rester alignée sur les objectifs du projet et de prendre
+                  des décisions éclairées.
+                </p>
+              </div>
+            </div>
+            <!-- End fifth card -->
+          </div>
+          <!-- End third row -->
+          <!-- ===== Start fourth row ====== -->
+          <div class="row my-2">
+            <!-- ====== Seventh card ===== -->
+            <div class="card p-3">
+              <div
+                class="row"
+                id="heading7"
+                onclick="toggleCollapse('collapse7')"
+              >
+                <div class="col-11">
+                  <h6>
+                    CE - 2.04 : Justifier les choix et valider les résultats
+                  </h6>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-chevron-down float-end"></i>
+                </div>
+              </div>
+              <div class="collapse" id="collapse7">
+                <p class="text-justify">
+                  Afin de garantir une validation rigoureuse du projet, j'ai mis
+                  en place une suite complète de tests unitaires à grande
+                  échelle. Pour ce faire, j'ai opté pour les frameworks JUnit 5
+                  et Mockito. Cette approche m'a permis d'assurer la fiabilité
+                  et la robustesse de chaque composant de l'application. En
+                  utilisant JUnit 5, j'ai pu structurer et exécuter des tests
+                  unitaires sur différentes parties du code, tandis que Mockito
+                  m'a offert la possibilité de simuler efficacement le
+                  comportement des dépendances et d'isoler les modules à tester.
+                  Grâce à ces outils, j'ai pu identifier et résoudre rapidement
+                  les éventuels problèmes, garantissant ainsi la qualité et la
+                  performance du projet.
+                </p>
+              </div>
+            </div>
+            <!-- End seventh card -->
+          </div>
+          <!-- End fourth row -->
+          <!-- ===== Start fifth row ====== -->
+          <div class="row my-2">
+            <!-- ====== Nineth card ===== -->
+            <div class="card p-3">
+              <div
+                class="row"
+                id="heading9"
+                onclick="toggleCollapse('collapse9')"
+              >
+                <div class="col-11">
+                  <h6>
+                    AC - A2 2.02 : Utiliser des techniques algorithmiques
+                    adaptées pour des problèmes complexes
+                  </h6>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-chevron-down float-end"></i>
+                </div>
+              </div>
+              <div class="collapse" id="collapse9">
+                <p class="text-justify">
+                  Dans le cadre de mon projet, j'ai pu acquérir et démontrer
+                  cette compétence en choisissant et en mettant en œuvre des
+                  techniques algorithmiques appropriées pour assurer la sécurité
+                  des données.
+                </p>
+                <p class="text-justify">
+                  Initialement, j'ai opté pour l'algorithme de chiffrement RSA,
+                  qui repose sur des principes mathématiques bien établis,
+                  notamment la difficulté de factoriser de grands nombres
+                  premiers. Ce choix était basé sur la robustesse de
+                  l'algorithme et sa large utilisation dans le domaine de la
+                  cryptographie. J'ai utilisé une bibliothèque pour chiffrer et
+                  déchiffrer les données de manière sécurisée.
+                </p>
+                <p class="text-justify">
+                  Cependant, au fur et à mesure que j'ai approfondi mes
+                  recherches et ma compréhension des protocoles de chiffrement,
+                  j'ai découvert le protocole de Damgård-Jurik. Ce protocole
+                  présente des caractéristiques uniques, notamment en ce qui
+                  concerne l'additivité homomorphique et la confidentialité
+                  multipartite. J'ai pris la décision de basculer vers le
+                  protocole Damgård-Jurik en raison de sa pertinence pour les
+                  cas d'utilisation spécifiques auxquels je faisais face,
+                  notamment la nécessité de permettre à plusieurs parties de
+                  collaborer pour chiffrer et déchiffrer des données sans
+                  révéler leurs entrées respectives.
+                </p>
+                <p class="text-justify">
+                  Cette transition a nécessité une compréhension approfondie des
+                  concepts sous-jacents au protocole de Damgård-Jurik ainsi que
+                  des compétences techniques pour implémenter correctement cet
+                  algorithme. J'ai dû étudier la documentation disponible,
+                  comprendre les principes de fonctionnement du protocole et
+                  adapter mon code en conséquence. Cette expérience m'a permis
+                  de mettre en pratique mes connaissances en algorithmique et de
+                  développer ma capacité à choisir et à utiliser des techniques
+                  algorithmiques adaptées à des problèmes complexes dans le
+                  domaine de la cryptographie.
+                </p>
+              </div>
+            </div>
+            <!-- End nineth card -->
+          </div>
+          <!-- End fifth row -->
         </div>
         <!-- End first column -->
         <!-- ======== Start second column ====== -->
@@ -206,7 +370,10 @@
                 onclick="toggleCollapse('collapse2')"
               >
                 <div class="col-11">
-                  <h6>CE - 4.04 : S'assurer de la cohérence et la qualité</h6>
+                  <h6>
+                    AC - A2 5.04 : Définir et mettre en œuvre une démarche de
+                    suivi de projet
+                  </h6>
                 </div>
                 <div class="col-1">
                   <i class="bi bi-chevron-down float-end"></i>
@@ -214,14 +381,22 @@
               </div>
               <div class="collapse" id="collapse2">
                 <p class="text-justify">
-                  J'ai utilisé des outils mathématiques les pourcentages, les
-                  quartiles, les probabilités et les moyennes pondérées pour
-                  réaliser une étude effective des données fournies
+                  Le projet a été mené selon les principes de la méthodologie
+                  agile, en mettant en œuvre la méthode SCRUM. Ainsi, la gestion
+                  de projet s'est déroulée par le biais de sprints successifs.
+                  En tant que SCRUM Master, j'ai participé activement à la
+                  planification et à l'exécution de ces sprints, tout en
+                  contribuant à l'orientation générale du projet. Mes
+                  responsabilités comprenaient la rédaction des comptes rendus
+                  des réunions quotidiennes et la création des graphiques de
+                  suivi de projet à la fin de chaque sprint. Mon rôle principal
+                  consistait à garantir le respect des principes agiles tout au
+                  long du projet. J'ai aussi participé à la rédaction d'un
+                  rapport technique à la fin du projet
                 </p>
                 <a
-                  href="https://drive.google.com/file/d/1rWDbj6HXPt-vrQw8oSDVa-2uck7nZV9N/view?usp=sharing"
-                  >Exemples de requêtes permettant de révéler des
-                  incohérences</a
+                  href="https://docs.google.com/document/d/1OERLMSgOqABgMUejeQkBUF45mbcO_vr_ewWa-EAHvRI/edit?usp=sharing"
+                  >Rapport technique</a
                 >
               </div>
             </div>
@@ -239,8 +414,8 @@
               >
                 <div class="col-11">
                   <h6>
-                    AC - A1 2.03 : Formaliser et mettre en œuvre des outils
-                    mathématiques pour l’informatique
+                    AC - A2 5.03 : Identifier les critères de faisabilité d’un
+                    projet informatique
                   </h6>
                 </div>
                 <div class="col-1">
@@ -249,20 +424,116 @@
               </div>
               <div class="collapse" id="collapse4">
                 <p class="text-justify">
-                  Après la création des bases de données, j'ai rédigé des
-                  requêtes pour identifier les incohérences, puis j'ai procédé à
-                  la mise à jour de la base de données afin d'assurer sa
-                  cohérence.
+                  Au début de chaque sprint, j'ai organisé des sessions de poker
+                  planning avec les membres de l'équipe pour évaluer la
+                  faisabilité des fonctionnalités demandées par le client. Cette
+                  méthode nous a permis d'attribuer des priorités
+                  d'implémentation à chaque fonctionnalité parmi celles à
+                  intégrer. Grâce à cette approche, j'ai pu identifier
+                  clairement les fonctionnalités qui ne pourraient pas être
+                  mises en œuvre en raison de contraintes techniques ou
+                  temporelles.
                 </p>
-                <a
-                  href="https://docs.google.com/document/d/16Wi2-NOn2z0knSqs7pnuHSRjnCFZRAjc0UbXfhk2BMI/edit?usp=sharing"
-                  >Lien vers le compte-rendu</a
-                >
               </div>
             </div>
             <!-- End fourth card -->
           </div>
           <!-- End second row -->
+          <!-- ===== Start third row ====== -->
+          <div class="row my-2">
+            <!-- ====== Sixth card ===== -->
+            <div class="card p-3">
+              <div
+                class="row"
+                id="heading6"
+                onclick="toggleCollapse('collapse6')"
+              >
+                <div class="col-11">
+                  <h6>
+                    AC - A2 2.01 : Choisir des structures de données complexes
+                    adaptées au problème
+                  </h6>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-chevron-down float-end"></i>
+                </div>
+              </div>
+              <div class="collapse" id="collapse6">
+                <p class="text-justify">
+                  L'attention portée à la qualité du code a été un pilier
+                  essentiel tout au long du processus de création de cette
+                  application. Pour garantir sa robustesse et sa facilité
+                  d'extension, j'ai opté pour l'utilisation de designs patterns.
+                  Ces modèles de conception ont permis de résoudre efficacement
+                  les problèmes en tirant parti de structures préétablies. Cette
+                  approche a non seulement contribué à maintenir le projet dans
+                  un état facilement compréhensible, mais elle a également
+                  facilité sa maintenance et son évolution future. En intégrant
+                  ces patterns, j'ai pu assurer que le code était bien
+                  structuré, modulaire et prêt à accueillir de nouvelles
+                  fonctionnalités sans compromettre sa stabilité.
+                </p>
+              </div>
+            </div>
+            <!-- End fifth card -->
+          </div>
+          <!-- End third row -->
+          <!-- ===== Start fourth row ====== -->
+          <div class="row my-2">
+            <!-- ====== Eighth card ===== -->
+            <div class="card p-3">
+              <div
+                class="row"
+                id="heading8"
+                onclick="toggleCollapse('collapse8')"
+              >
+                <div class="col-11">
+                  <h6>
+                    CE - 5.02 : Communiquer efficacement avec les différents
+                    acteurs d'un projet
+                  </h6>
+                </div>
+                <div class="col-1">
+                  <i class="bi bi-chevron-down float-end"></i>
+                </div>
+              </div>
+              <div class="collapse" id="collapse8">
+                <p class="text-justify">
+                  En tant que Product Owner, l'une de mes responsabilités
+                  principales était de faciliter la communication entre les
+                  différents acteurs du projet. Pour ce faire, j'ai adopté une
+                  approche proactive et collaborative, favorisant l'échange
+                  d'informations et la collaboration au sein de l'équipe.
+                </p>
+                <p class="text-justify">
+                  J'ai maintenu une communication régulière avec le
+                  commanditaire du projet, en organisant des réunions
+                  périodiques et en échangeant des e-mails pour discuter des
+                  exigences, des priorités et des évolutions du projet. J'ai
+                  veillé à poser les bonnes questions pour obtenir une
+                  compréhension approfondie de ses besoins et à fournir des
+                  réponses claires et précises à ses interrogations.
+                </p>
+                <p>
+                  Parallèlement, j'ai joué un rôle de liaison entre le client et
+                  le reste de l'équipe, en transmettant efficacement les
+                  informations recueillies lors des échanges avec le
+                  commanditaire. J'ai veillé à ce que les membres de l'équipe
+                  comprennent clairement les besoins du client et les objectifs
+                  du projet, facilitant ainsi la prise de décision et
+                  l'élaboration de solutions adaptées.
+                </p>
+                <p class="text-justify">
+                  En favorisant une communication ouverte, transparente et
+                  proactive, j'ai contribué à maintenir un haut niveau
+                  d'engagement et de collaboration au sein de l'équipe, ce qui a
+                  été essentiel pour le succès du projet.
+                </p>
+              </div>
+            </div>
+            <!-- End eighth card -->
+          </div>
+          <!-- End fourth row -->
         </div>
         <!-- End second column-->
       </div>
