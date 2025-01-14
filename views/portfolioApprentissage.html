@@ -1,288 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<html lang="fr">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlotte Lewis - Portefeuille de compétences</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta name="description" content="Portefeuille de compétences de Charlotte Lewis présentant ses projets d'apprentissage.">
+    <meta name="keywords" content="Charlotte Lewis, portefeuille, compétences, projets, apprentissage">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      href="../assets/bootstrap/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="../assets/css/main.css" rel="stylesheet" />
-  </head>
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/gallery.css" rel="stylesheet">
+</head>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <!-- ======= Header ======= -->
-    <header class="header d-flex align-items-center fixed-top py-2">
-      <div class="container-fluid align-items-center">
+<body>
+
+<!-- ======= Header ======= -->
+<header class="header d-flex align-items-center fixed-top py-2">
+    <div class="container-fluid align-items-center">
         <div class="container-fluid">
-          <nav
-            class="navbar navbar-expand-lg border-bottom"
-            data-bs-theme="dark"
-          >
-            <div class="container-fluid p-0">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div
-                class="collapse navbar-collapse container-fluid"
-                id="navbarNav"
-              >
-                <ul class="navbar-nav container-fluid justify-content-between">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="aboutMe.html">A propos de moi</a></li>
-                  <li class="dropdown">
-                    <a
-                      class="grey-text"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span class="active">Gallerie de projets</span
-                      >&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0"
-                    >
-                      <li><a class="active" href="gallery.html">Projets personnels</a></li>
-                      <li><a href="SAE_info.html">SAE et TP</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+            <nav class="navbar navbar-expand-lg border-bottom" data-bs-theme="dark">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+                        <ul class="navbar-nav container-fluid justify-content-between">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="aboutMe.html">À propos de moi</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Galerie de projets
+                                </a>
+                                <ul class="dropdown-menu" style="max-width: fit-content;">
+                                    <li><a class="dropdown-item" href="gallery.html">Projets personnels</a></li>
+                                    <li><a class="dropdown-item" href="SAE_info.html">SAE et TP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </header>
-    <!-- End Header -->
+    </div>
+</header>
+<!-- End Header -->
 
-    <main class="position-relative" style="margin-top: 70px; min-height: 80dvh">
-      <div class="row justify-content-center">
+<main class="position-relative" style="margin-top: 70px; min-height: 80vh">
+    <div class="row justify-content-center">
         <div class="col-lg-7 text-center my-5">
-          <h2>Portfolio d'apprentissage</h2>
+            <h2>Portfolio d'apprentissage</h2>
         </div>
-      </div>
+    </div>
 
-      <!-- ======= Gallery Section ======= -->
-      <section class="position-absolute top-50">
-        <!-- ======= Start container ======= -->
-        <div class="container-fluid mx-2">
-          <!-- ====== Start row ===== -->
-          <div class="row gy-4 gx-3 justify-content-center">
-            <!-- SAE 1.04 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAE1.04.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/SAE1.04.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Maria Pizza - Implémentation d'une base de données
-                      relationnelle
-                    </p>
-                  </div>
+    <!-- ======= Gallery Section ======= -->
+    <section>
+        <div class="container-fluid">
+            <div class="row row-eq-height gy-4 gx-3 justify-content-center">
+                <!-- Projet sauvegarde (A3) -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/projet-sauvegarde.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/backup-project.png" class="img-fluid" alt="Maria Pizza - Implémentation d'une base de données relationnelle">
+                            <div class="card-overlay">
+                                <p class="text-white">5av€ - Une application de sauvegarde et restitution de dossiers</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card-->
-              </a>
-            </div>
-            <!-- End SAE 1.04 -->
+                <!-- End sauvegarde (A3) -->
 
-      <!-- ======= Gallery Section ======= -->
-      <section class="position-absolute top-50">
-        <!-- ======= Start container ======= -->
-        <div class="container-fluid mx-2">
-          <!-- ====== Start row ===== -->
-          <div class="row gy-4 gx-3 justify-content-center">
-            <!-- SAE 1.04 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAE1.04.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/SAE1.04.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Maria Pizza - Implémentation d'une base de données
-                      relationnelle
-                    </p>
-                  </div>
+                <!-- SAE 1.04 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/SAE1.04.html">
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/SAE1.04.png" class="img-fluid" alt="Maria Pizza - Implémentation d'une base de données relationnelle">
+                            <div class="card-overlay">
+                                <p class="text-white">Maria Pizza - Implémentation d'une base de données relationnelle</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card-->
-              </a>
-            </div>
-            <!-- End SAE 1.04 -->
-            <!-- SAE 2.04 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAE2.04.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/SAE2.04.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Etude de statistiques - De fichiers excel vers une base de
-                      données
-                    </p>
-                  </div>
+                <!-- End SAE 1.04 -->
+
+                <!-- SAE 2.04 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/SAE2.04.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/SAE2.04.png" class="img-fluid" alt="Étude de statistiques - De fichiers Excel vers une base de données">
+                            <div class="card-overlay">
+                                <p class="text-white">Étude de statistiques - De fichiers Excel vers une base de données</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card -->
-              </a>
-            </div>
-            <!-- End SAE 2.04 -->
-            <!-- SAE 2.05 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAE2.05.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/SAE2.05.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Gestion d'un projet fictif - Bar gaming Player One
-                    </p>
-                  </div>
+                <!-- End SAE 2.04 -->
+
+                <!-- SAE 2.05 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/SAE2.05.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/SAE2.05.png" class="img-fluid" alt="Gestion d'un projet fictif - Bar gaming Player One">
+                            <div class="card-overlay">
+                                <p class="text-white">Gestion d'un projet fictif - Bar gaming Player One</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card -->
-              </a>
-            </div>
-            <!-- End SAE 2.05 -->
-            <!-- SAE vitrine -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAE-vitrine.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/siteVitrine.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">Création d'un site web sécurisé</p>
-                  </div>
+                <!-- End SAE 2.05 -->
+
+                <!-- SAE vitrine -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/SAE-vitrine.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/siteVitrine.png" class="img-fluid" alt="Création d'un site web sécurisé">
+                            <div class="card-overlay">
+                                <p class="text-white">Création d'un site web sécurisé</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card -->
-              </a>
-            </div>
-            <!-- End SAE vitrine -->
-            <!-- SAE A2 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAEA2.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/SAEA2.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Réseau et sécurité - Une application de gestion d'enchères
-                    </p>
-                  </div>
+                <!-- End SAE vitrine -->
+
+                <!-- SAE A2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/SAEA2.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/SAEA2.png" class="img-fluid" alt="Réseau et sécurité - Une application de gestion d'enchères">
+                            <div class="card-overlay">
+                                <p class="text-white">Réseau et sécurité - Une application de gestion d'enchères</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card -->
-              </a>
-            </div>
-            <!-- End SAE A2 -->
-            <!-- MSI -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/rechercheTerrainSI.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/MSI.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Analyse du système d'information d'une organisation
-                    </p>
-                  </div>
+                <!-- End SAE A2 -->
+
+                <!-- MSI -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/rechercheTerrainSI.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/MSI.png" class="img-fluid" alt="Analyse du système d'information d'une organisation">
+                            <div class="card-overlay">
+                                <p class="text-white">Analyse du système d'information d'une organisation</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card -->
-              </a>
-            </div>
-            <!-- End MSI -->
-            <!-- SAE2.02 -->
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <a href="./projets/SAE2.02.html" target="_blank">
-                <!-- Start card -->
-                <div class="card h-100 bg-transparent">
-                  <img
-                    src="../assets/img/gallery/portfolioApprentissage/SAE2.02.png"
-                    class="img-fluid card-img"
-                    alt=""
-                  />
-                  <div class="card-overlay">
-                    <p class="text-white">
-                      Le lien entre mathématiques et un jeu de société
-                    </p>
-                  </div>
+                <!-- End MSI -->
+
+                <!-- SAE 2.02 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="./projets/SAE2.02.html" >
+                        <div class="gallery-card">
+                            <img src="../assets/img/gallery/portfolioApprentissage/SAE2.02.png" class="img-fluid" alt="Le lien entre mathématiques et un jeu de société">
+                            <div class="card-overlay">
+                                <p class="text-white">Le lien entre mathématiques et un jeu de société</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- End card -->
-              </a>
+                <!-- End SAE 2.02 -->
             </div>
-            <!-- End MSI -->
-          </div>
-          <!-- End row -->
         </div>
-        <!-- End container -->
-      </section>
-      <!-- End Gallery Section -->
-    </main>
-    <!-- End main -->
-    <!-- ======= Footer ======= -->
-    <footer class="p-3">
-      <div class="container d-flex justify-content-center">
+    </section>
+    <!-- End Gallery Section -->
+
+</main>
+<!-- End main -->
+
+<!-- ======= Footer ======= -->
+<footer class="p-3">
+    <div class="container d-flex justify-content-center">
         <!-- Go to Top arrow button -->
         <a href="#">
-          <i class="bi bi-arrow-up"></i>
+            <i class="bi bi-arrow-up"></i>
         </a>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- JS Files -->
-    <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
-  </body>
+<!-- JS Files -->
+<script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+
+</body>
+
 </html>
