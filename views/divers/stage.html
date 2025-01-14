@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Charlotte Lewis - Portefeuille de compétences</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/bootstrap/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="../../assets/css/main.css" rel="stylesheet" />
+    <link href="../../assets/css/portfolioApprentissage.css" rel="stylesheet" />
+    <script src="../../assets/js/accordian.js" defer></script>
+</head>
+
+<body style="min-width: 100dvw" id="fireworks-container">
+    <!-- ======= Header ======= -->
+    <header class="header d-flex align-items-center fixed-top py-2">
+        <div class="container-fluid align-items-center">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg border-bottom" data-bs-theme="dark">
+                    <div class="container-fluid p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+                            <ul class="navbar-nav container-fluid justify-content-between">
+                                <li><a href="../../index.html">Home</a></li>
+                                <li><a href="../aboutMe.html">À propos de moi</a></li>
+                                <li class="dropdown">
+                                    <a class="active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>Galerie de projets</span>&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0">
+                                        <li><a href="../gallery.html">Projets personnels</a></li>
+                                        <li>
+                                            <a class="active" href="../SAE_info.html">SAE et TP</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="../contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main style="margin-top: 80px; min-width: 100dvw">
+        <div class="row my-2">
+            <div class="col-2 d-flex justify-content-end">
+                <a class="btn" href="../portfolioApprentissage.html">
+                    <i class="bi bi-chevron-left"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-7 col-md-9 text-center">
+                <h2 class="mb-3 front">
+                    Stage chez GM Editions
+                </h2>
+            </div>
+        </div>
+        <!-- =========== Intro =========== -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-10 text-justify">
+                <ul>
+                    <li><strong>Dates du stage</strong> : 10 semaines</li>
+                    <li><strong>Lieu</strong> : Lunel</li>
+                    <li><strong>Entreprise</strong> : GM Editions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-10 text-justify">
+                Dans le cadre de ma deuxième année de BUT Informatique, j'ai effectué un stage obligatoire de 10 semaines au sein de GM Editions, une petite entreprise spécialisée dans le SEO et le marketing digital. Fondée en 2023, GM Editions offre des services de gestion de contenu web, développement de sites internet, et des stratégies de netlinking pour aider les entreprises à accroître leur présence en ligne. Grâce à sa flexibilité, GM Editions s'adapte rapidement aux évolutions du marché et répond aux besoins spécifiques de ses clients. L'entreprise se positionne en B2B, développant des applications pour Shopify pour automatiser et optimiser les processus de vente en ligne. Elle analyse les retours utilisateurs pour améliorer continuellement ses outils.
+            </div>
+        </div>
+        <!-- End intro -->
+        <div class="row justify-content-center mt-5">
+            <h5 class="col-10">
+                Missions Réalisées
+            </h5>
+        </div>
+
+        <!-- ===== Beginning of container ==== -->
+        <div class="row justify-content-center my-2">
+            <!-- ==== Start first column ==== -->
+            <div class="col-md-5 col-sm-11 col-10 mx-2">
+                <!-- ===== Start first row ==== -->
+                <div class="row my-2">
+                    <!-- ====== First card ===== -->
+                    <div class="card p-3">
+                        <div class="row" id="heading1" onclick="toggleCollapse('collapse1')">
+                            <div class="col-11">
+                                <h6>
+                                    Création de Collections d'Offres
+                                </h6>
+                            </div>
+                            <div class="col-1">
+                                <i class="bi bi-chevron-down float-end"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse1">
+                            <p class="text-justify">
+                                Implémentation de la fonctionnalité permettant aux commerçants de créer des collections d'offres avec des titres uniques et des dates de début et de fin configurables. Flexibilité pour appliquer les offres à un seul produit, plusieurs produits, une collection de produits, ou l'ensemble du magasin.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End first card -->
+                </div>
+                <!-- End first row -->
+                <!-- ============ Start second row ========== -->
+                <div class="row my-2">
+                    <!-- ====== Second card ===== -->
+                    <div class="card p-3">
+                        <div class="row" id="heading2" onclick="toggleCollapse('collapse2')">
+                            <div class="col-11">
+                                <h6>
+                                    Gestion des Lots d'Offres
+                                </h6>
+                            </div>
+                            <div class="col-1">
+                                <i class="bi bi-chevron-down float-end"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse2">
+                            <p class="text-justify">
+                                Développement de la capacité à créer plusieurs lots dans chaque collection d'offres, avec configuration des types de réduction (pourcentage, fixe, ou absence de réduction). Application des lots à différents variants de produits (tailles, couleurs, etc.).
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End second card -->
+                </div>
+                <!-- End second row -->
+                <!-- ============ Start third row ========== -->
+                <div class="row my-2">
+                    <!-- ====== Third card ===== -->
+                    <div class="card p-3">
+                        <div class="row" id="heading3" onclick="toggleCollapse('collapse3')">
+                            <div class="col-11">
+                                <h6>
+                                    Modification et Suppression des Offres
+                                </h6>
+                            </div>
+                            <div class="col-1">
+                                <i class="bi bi-chevron-down float-end"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse3">
+                            <p class="text-justify">
+                                Mise en place de fonctionnalités permettant aux utilisateurs de modifier ou supprimer des lots et des collections d'offres. Assurance que chaque collection contient au moins un lot et que chaque lot cible au moins un variant de produit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End third card -->
+                </div>
+                <!-- End third row -->
+                <!-- ============ Start fourth row ========== -->
+                <div class="row my-2">
+                    <!-- ====== Fourth card ===== -->
+                    <div class="card p-3">
+                        <div class="row" id="heading4" onclick="toggleCollapse('collapse4')">
+                            <div class="col-11">
+                                <h6>
+                                    Optimisation de l'Interface Utilisateur
+                                </h6>
+                            </div>
+                            <div class="col-1">
+                                <i class="bi bi-chevron-down float-end"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse4">
+                            <p class="text-justify">
+                                Intégration des offres dans le storefront Shopify pour une visibilité immédiate aux clients. Développement d'une interface intuitive pour la sélection et l'ajout des lots au panier, avec application automatique des réductions.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End fourth card -->
+                </div>
+                <!-- End fourth row -->
+                <!-- ============ Start fifth row ========== -->
+                <div class="row my-2">
+                    <!-- ====== Fifth card ===== -->
+                    <div class="card p-3">
+                        <div class="row" id="heading5" onclick="toggleCollapse('collapse5')">
+                            <div class="col-11">
+                                <h6>
+                                    Fonctionnalités Avancées
+                                </h6>
+                            </div>
+                            <div class="col-1">
+                                <i class="bi bi-chevron-down float-end"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse5">
+                            <p class="text-justify">
+                                Options de personnalisation pour l'apparence des lots, incluant labels, sous-titres, et affichage des prix. Fonction de duplication des offres pour une gestion simplifiée des promotions multiples. Possibilité de désactiver temporairement une offre et de sauvegarder des offres en tant que brouillon.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End fifth card -->
+                </div>
+                <!-- End fifth row -->
+            </div>
+            <!-- End first column -->
+        </div>
+        <!-- End of container -->
+
+        <!-- Début sommaire des traces -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-10">
+                <h5>Résultats</h5>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1ocXPytdBFDyQrXXwjxCkfxB7YSb8jfXB/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Fin sommaire des traces -->
+
+        <!-- Début sommaire des traces -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-10">
+                <h5>Compétences Acquises</h5>
+                <ul>
+                    <li>Polaris</li>
+                    <li>Remix</li>
+                    <li>GraphQL</li>
+                    <li>Prisma</li>
+                    <li>React</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Fin sommaire des traces -->
+    </main>
+    <!-- End main -->
+
+    <!-- JS Files -->
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../../assets/fireworks.js"></script>
+</body>
+
+</html>
