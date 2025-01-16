@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
@@ -25,7 +26,7 @@
     <script src="../../assets/js/accordian.js" defer></script>
 </head>
 
-<body style="min-width: 100dvw" id="fireworks-container">
+<body>
     <!-- ======= Header ======= -->
     <header class="header d-flex align-items-center fixed-top py-2">
         <div class="container-fluid align-items-center">
@@ -39,221 +40,266 @@
                         </button>
                         <div class="collapse navbar-collapse container-fluid" id="navbarNav">
                             <ul class="navbar-nav container-fluid justify-content-between">
-                                <li><a href="../../index.html">Home</a></li>
-                                <li><a href="../aboutMe.html">À propos de moi</a></li>
-                                <li class="dropdown">
-                                    <a class="active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span>Galerie de projets</span>&nbsp;&nbsp;<i class="bi bi-chevron-down"></i>
+                                <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../aboutMe.html">À propos de moi</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../proExperiences.html">Expériences professionnelles</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Galerie de projets
                                     </a>
-                                    <ul class="dropdown-menu my-lg-3 ms-3 ms-lg-2 py-0 container-fluid border-0">
-                                        <li><a href="../gallery.html">Projets personnels</a></li>
-                                        <li>
-                                            <a class="active" href="../SAE_info.html">SAE et TP</a>
-                                        </li>
+                                    <ul class="dropdown-menu" style="max-width: fit-content;">
+                                        <li><a class="dropdown-item" href="../gallery.html">Projets personnels</a></li>
+                                        <li><a class="dropdown-item" href="../SAE_info.html">SAE et TP</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="../contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
+
+        <style>
+            .full-size-iframe {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            }
+            .full-size-iframe iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </header>
     <!-- End Header -->
 
-    <main style="margin-top: 80px; min-width: 100dvw">
-        <div class="row my-2">
-            <div class="col-2 d-flex justify-content-end">
-                <a class="btn" href="../portfolioApprentissage.html">
-                    <i class="bi bi-chevron-left"></i>
-                </a>
+    <main style="margin-top: 80px;">
+        <div class="container my-4">
+            <div class="row mb-4">
+                <div class="col-12 text-end">
+                  <a class="btn btn-primary" href="../portfolioApprentissage.html">
+                    <i class="bi bi-chevron-left"></i> Retour
+                  </a>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-7 col-md-9 text-center">
-                <h2 class="mb-3 front">
-                    Stage chez GM Editions
-                </h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Stage chez GM Editions</h2>
+                </div>
             </div>
-        </div>
-        <!-- =========== Intro =========== -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-10 text-justify">
-                <ul>
-                    <li><strong>Dates du stage</strong> : 10 semaines</li>
-                    <li><strong>Lieu</strong> : Lunel</li>
-                    <li><strong>Entreprise</strong> : GM Editions</li>
-                </ul>
+            <!-- =========== Intro =========== -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-lg-8 text-justify">
+                    <ul>
+                        <li><strong>Dates du stage</strong> : Avril 2024 - Juin 2024</li>
+                        <li><strong>Durée du stage</strong> : 10 semaines</li>
+                        <li><strong>Lieu du stage</strong> : Lunel</li>
+                        <li><strong>Entreprise </strong>: GM Editions</li>
+                        <li><strong>Technologies utilisés</strong>: 
+                            <ul>
+                                <li>Polaris</li>
+                                <li>Remix</li>
+                                <li>GraphQL</li>
+                                <li>Prisma</li>
+                                <li>React</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-10 text-justify">
-                Dans le cadre de ma deuxième année de BUT Informatique, j'ai effectué un stage obligatoire de 10 semaines au sein de GM Editions, une petite entreprise spécialisée dans le SEO et le marketing digital. Fondée en 2023, GM Editions offre des services de gestion de contenu web, développement de sites internet, et des stratégies de netlinking pour aider les entreprises à accroître leur présence en ligne. Grâce à sa flexibilité, GM Editions s'adapte rapidement aux évolutions du marché et répond aux besoins spécifiques de ses clients. L'entreprise se positionne en B2B, développant des applications pour Shopify pour automatiser et optimiser les processus de vente en ligne. Elle analyse les retours utilisateurs pour améliorer continuellement ses outils.
+            <div class="row justify-content-center mt-3">
+                <div class="col-lg-8 text-justify">
+                    Dans le cadre de ma deuxième année de BUT Informatique, j'ai 
+                    effectué un stage obligatoire de 10 semaines au sein de GM Editions, 
+                    une petite entreprise spécialisée dans le SEO et le marketing digital. 
+                    Fondée en 2023, GM Editions offre des services de gestion de contenu web, 
+                    développement de sites internet, et des stratégies de netlinking pour 
+                    aider les entreprises à accroître leur présence en ligne. 
+                    Grâce à sa flexibilité, GM Editions s'adapte rapidement aux 
+                    évolutions du marché et répond aux besoins spécifiques de ses clients. 
+                    L'entreprise se positionne en B2B, développant des applications pour 
+                    Shopify pour automatiser et optimiser les processus de vente en ligne. 
+                    Elle analyse les retours utilisateurs pour améliorer continuellement ses outils.
+                </div>
             </div>
-        </div>
-        <!-- End intro -->
-        <div class="row justify-content-center mt-5">
-            <h5 class="col-10">
-                Missions Réalisées
-            </h5>
-        </div>
+            <!-- End intro -->
+             
+            <div class="row justify-content-center mt-5">
+                <h5 class="col-lg-8 text-center">Missions Réalisées</h5>
+            </div>
 
-        <!-- ===== Beginning of container ==== -->
-        <div class="row justify-content-center my-2">
-            <!-- ==== Start first column ==== -->
-            <div class="col-md-5 col-sm-11 col-10 mx-2">
-                <!-- ===== Start first row ==== -->
-                <div class="row my-2">
-                    <!-- ====== First card ===== -->
-                    <div class="card p-3">
-                        <div class="row" id="heading1" onclick="toggleCollapse('collapse1')">
-                            <div class="col-11">
-                                <h6>
-                                    Création de Collections d'Offres
-                                </h6>
-                            </div>
-                            <div class="col-1">
-                                <i class="bi bi-chevron-down float-end"></i>
+            <!-- ===== Beginning of container ==== -->
+            <div class="row justify-content-center my-4">
+                <!-- ==== Start first column ==== -->
+                <div class="col-md-6">
+                    <!-- ===== Start first card ==== -->
+                    <div class="card mb-3">
+                        <div class="card-header" id="heading1" onclick="toggleCollapse('collapse1')">
+                            
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Création de collections d'offres</h6>
+                                <i class="bi bi-chevron-down"></i>
                             </div>
                         </div>
                         <div class="collapse" id="collapse1">
-                            <p class="text-justify">
-                                Implémentation de la fonctionnalité permettant aux commerçants de créer des collections d'offres avec des titres uniques et des dates de début et de fin configurables. Flexibilité pour appliquer les offres à un seul produit, plusieurs produits, une collection de produits, ou l'ensemble du magasin.
-                            </p>
+                            <div class="card-body">
+                                
+                                <p class="text-justify">
+                                    Implémentation de la fonctionnalité permettant aux commerçants de 
+                                    créer des collections d'offres avec des titres uniques et des dates 
+                                    de début et de fin configurables. Flexibilité pour appliquer les 
+                                    offres à un seul produit, plusieurs produits, une collection de produits, 
+                                    ou l'ensemble du magasin.
+                                </p>
+                                
+                            </div>
                         </div>
                     </div>
                     <!-- End first card -->
-                </div>
-                <!-- End first row -->
-                <!-- ============ Start second row ========== -->
-                <div class="row my-2">
-                    <!-- ====== Second card ===== -->
-                    <div class="card p-3">
-                        <div class="row" id="heading2" onclick="toggleCollapse('collapse2')">
-                            <div class="col-11">
-                                <h6>
-                                    Gestion des Lots d'Offres
-                                </h6>
-                            </div>
-                            <div class="col-1">
-                                <i class="bi bi-chevron-down float-end"></i>
+                    <!-- ============ Start second card ========== -->
+                    <div class="card mb-3">
+                        <div class="card-header" id="heading2" onclick="toggleCollapse('collapse2')">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Gestion des lots d'offres</h6>
+                                <i class="bi bi-chevron-down"></i>
                             </div>
                         </div>
                         <div class="collapse" id="collapse2">
-                            <p class="text-justify">
-                                Développement de la capacité à créer plusieurs lots dans chaque collection d'offres, avec configuration des types de réduction (pourcentage, fixe, ou absence de réduction). Application des lots à différents variants de produits (tailles, couleurs, etc.).
-                            </p>
+                            <div class="card-body">
+                                
+                                <p class="text-justify">
+                                    Développement de la capacité à créer plusieurs lots dans chaque collection 
+                                    d'offres, avec configuration des types de réduction (pourcentage, fixe, 
+                                    ou absence de réduction). Application des lots à différents variants de 
+                                    produits (tailles, couleurs, etc.).
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <!-- End second card -->
-                </div>
-                <!-- End second row -->
-                <!-- ============ Start third row ========== -->
-                <div class="row my-2">
-                    <!-- ====== Third card ===== -->
-                    <div class="card p-3">
-                        <div class="row" id="heading3" onclick="toggleCollapse('collapse3')">
-                            <div class="col-11">
-                                <h6>
-                                    Modification et Suppression des Offres
-                                </h6>
-                            </div>
-                            <div class="col-1">
-                                <i class="bi bi-chevron-down float-end"></i>
+                    <!-- ============ Start third card ========== -->
+                    <div class="card mb-3">
+                        <div class="card-header" id="heading5" onclick="toggleCollapse('collapse5')">
+                            <div class="d-flex justify-content-between">
+                                
+                                <h6 class="mb-0">Modification et suppression des offres</h6>
+                                <i class="bi bi-chevron-down"></i>
                             </div>
                         </div>
-                        <div class="collapse" id="collapse3">
-                            <p class="text-justify">
-                                Mise en place de fonctionnalités permettant aux utilisateurs de modifier ou supprimer des lots et des collections d'offres. Assurance que chaque collection contient au moins un lot et que chaque lot cible au moins un variant de produit.
-                            </p>
+                        <div class="collapse" id="collapse5">
+                            <div class="card-body">
+                                
+                                <p class="text-justify">
+                                    Mise en place de fonctionnalités permettant aux utilisateurs de 
+                                    modifier ou supprimer des lots et des collections d'offres. 
+                                    Assurance que chaque collection contient au moins un lot et que chaque lot 
+                                    cible au moins un variant de produit.
+                                </p>
+                               
+                            </div>
                         </div>
                     </div>
                     <!-- End third card -->
                 </div>
-                <!-- End third row -->
-                <!-- ============ Start fourth row ========== -->
-                <div class="row my-2">
-                    <!-- ====== Fourth card ===== -->
-                    <div class="card p-3">
-                        <div class="row" id="heading4" onclick="toggleCollapse('collapse4')">
-                            <div class="col-11">
-                                <h6>
-                                    Optimisation de l'Interface Utilisateur
-                                </h6>
-                            </div>
-                            <div class="col-1">
-                                <i class="bi bi-chevron-down float-end"></i>
+                <!-- End first column -->
+                <!-- ======== Start second column ====== -->
+                <div class="col-md-6">
+                    <!-- ====== Start fourth row ====== -->
+                    <div class="card mb-3">
+                        <div class="card-header" id="heading7" onclick="toggleCollapse('collapse7')">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Optimisation de l'interface utilisateur</h6>
+                                <i class="bi bi-chevron-down"></i>
                             </div>
                         </div>
-                        <div class="collapse" id="collapse4">
-                            <p class="text-justify">
-                                Intégration des offres dans le storefront Shopify pour une visibilité immédiate aux clients. Développement d'une interface intuitive pour la sélection et l'ajout des lots au panier, avec application automatique des réductions.
-                            </p>
+                        <div class="collapse" id="collapse7">
+                            <div class="card-body">
+                                
+                                <p class="text-justify">
+                                    Intégration des offres dans le storefront Shopify pour une visibilité 
+                                    immédiate aux clients. Développement d'une interface intuitive pour 
+                                    la sélection et l'ajout des lots au panier, avec application 
+                                    automatique des réductions.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <!-- End fourth card -->
-                </div>
-                <!-- End fourth row -->
-                <!-- ============ Start fifth row ========== -->
-                <div class="row my-2">
-                    <!-- ====== Fifth card ===== -->
-                    <div class="card p-3">
-                        <div class="row" id="heading5" onclick="toggleCollapse('collapse5')">
-                            <div class="col-11">
-                                <h6>
-                                    Fonctionnalités Avancées
-                                </h6>
-                            </div>
-                            <div class="col-1">
-                                <i class="bi bi-chevron-down float-end"></i>
+                    <!-- ====== Start fifth card ====== -->
+                    <div class="card mb-3">
+                        <div class="card-header" id="heading9" onclick="toggleCollapse('collapse9')">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Fonctionnalités avancées</h6>
+                                <i class="bi bi-chevron-down"></i>
                             </div>
                         </div>
-                        <div class="collapse" id="collapse5">
-                            <p class="text-justify">
-                                Options de personnalisation pour l'apparence des lots, incluant labels, sous-titres, et affichage des prix. Fonction de duplication des offres pour une gestion simplifiée des promotions multiples. Possibilité de désactiver temporairement une offre et de sauvegarder des offres en tant que brouillon.
-                            </p>
+                        <div class="collapse" id="collapse9">
+                            <div class="card-body">
+                                <p class="text-justify">
+                                    Options de personnalisation pour l'apparence des lots, incluant labels, 
+                                    sous-titres, et affichage des prix. Fonction de duplication des offres 
+                                    pour une gestion simplifiée des promotions multiples. Possibilité de 
+                                    désactiver temporairement une offre et de sauvegarder des offres en 
+                                    tant que brouillon.
+                                </p>
+                              
+                            </div>
                         </div>
                     </div>
                     <!-- End fifth card -->
                 </div>
-                <!-- End fifth row -->
+                <!-- End second column-->
             </div>
-            <!-- End first column -->
-        </div>
-        <!-- End of container -->
+            <!-- End of container -->
 
-        <!-- Début sommaire des traces -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-10">
-                <h5>Résultats</h5>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1ocXPytdBFDyQrXXwjxCkfxB7YSb8jfXB/preview" allow="autoplay" allowfullscreen></iframe>
+            <!-- Début sommaire des traces -->
+            
+            <div class="row justify-content-center mt-5">
+                <h5 class="col-lg-8 text-center">Résultats</h5>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-8">
+                    <div class="full-size-iframe">
+                        <iframe src="https://drive.google.com/file/d/1ocXPytdBFDyQrXXwjxCkfxB7YSb8jfXB/preview" allow="autoplay" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Fin sommaire des traces -->
-
-        <!-- Début sommaire des traces -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-10">
-                <h5>Compétences Acquises</h5>
-                <ul>
-                    <li>Polaris</li>
-                    <li>Remix</li>
-                    <li>GraphQL</li>
-                    <li>Prisma</li>
-                    <li>React</li>
-                </ul>
+            
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-10">
+                    <p class="underline">Traces</p>
+                    <ol>
+                        <li><a href="https://github.com/c-r-lewis/5av-.git">Lien vers le code source</a></li>
+                      
+                    </ol>
+                </div>
             </div>
+            <!-- Fin sommaire des traces -->
         </div>
-        <!-- Fin sommaire des traces -->
     </main>
     <!-- End main -->
 
+    <!-- ======= Footer ======= -->
+    <footer class="p-3">
+        <div class="container d-flex justify-content-center">
+            <!-- Go to Top arrow button -->
+            <a href="#">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
     <!-- JS Files -->
     <script src="../../assets/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="../../assets/fireworks.js"></script>
+    
 </body>
 
 </html>
+
